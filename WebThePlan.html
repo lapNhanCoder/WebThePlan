@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Website bán vé máy bay </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICON + FONT -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <h2><i class="fa fa-plane"></i> CHUYẾN BAY</h2>
+  <nav>
+    <a href="#">Khách sạn</a>
+    <a href="#">Vé máy bay</a>
+    <a href="#">Khuyến mãi</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Tìm chuyến bay giá rẻ</h1>
+</section>
+
+<!-- SEARCH -->
+<div class="search-box">
+
+  <div class="input-group">
+    <i class="fa fa-plane-departure"></i>
+    <input type="text" id="from" placeholder="Điểm đi">
+  </div>
+
+  <div class="input-group">
+    <i class="fa fa-plane-arrival"></i>
+    <input type="text" id="to" placeholder="Điểm đến">
+  </div>
+
+  <div class="input-group">
+    <i class="fa fa-calendar"></i>
+    <input type="date" id="date">
+  </div>
+
+  <button onclick="searchFlight()">Tìm kiếm</button>
+
+</div>
+
+<!-- GỢI Ý -->
+<div class="container">
+  <h3>🔥 Chuyến bay phổ biến</h3>
+
+  <div class="popular">
+    <div class="card">
+      <p>Hà Nội → TP.HCM</p>
+      <span>1.200.000đ</span>
+    </div>
+
+    <div class="card">
+      <p>Hà Nội → Đà Nẵng</p>
+      <span>800.000đ</span>
+    </div>
+
+    <div class="card">
+      <p>TP.HCM → Phú Quốc</p>
+      <span>900.000đ</span>
+    </div>
+  </div>
+
+  <!-- KẾT QUẢ -->
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
