@@ -1,80 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Website bán vé máy bay </title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- ICON + FONT -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Chuyến bay - Hệ thống đặt vé</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <h2><i class="fa fa-plane"></i> CHUYẾN BAY</h2>
-  <nav>
-    <a href="#">Khách sạn</a>
-    <a href="#">Vé máy bay</a>
-    <a href="#">Khuyến mãi</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Tìm chuyến bay giá rẻ</h1>
-</section>
-
-<!-- SEARCH -->
-<div class="search-box">
-
-  <div class="input-group">
-    <i class="fa fa-plane-departure"></i>
-    <input type="text" id="from" placeholder="Điểm đi">
-  </div>
-
-  <div class="input-group">
-    <i class="fa fa-plane-arrival"></i>
-    <input type="text" id="to" placeholder="Điểm đến">
-  </div>
-
-  <div class="input-group">
-    <i class="fa fa-calendar"></i>
-    <input type="date" id="date">
-  </div>
-
-  <button onclick="searchFlight()">Tìm kiếm</button>
-
+<div class="header">
+    <div class="logo">✈️ CHUYẾN BAY</div>
+    <div class="nav">
+        <a href="#">Khách sạn</a>
+        <a href="#">Vé máy bay</a>
+        <a href="#">Khuyến mãi</a>
+    </div>
 </div>
 
-<!-- GỢI Ý -->
-<div class="container">
-  <h3>🔥 Chuyến bay phổ biến</h3>
+<div class="sidebar">
+    <a href="#">🏨 Khách sạn</a>
+    <a href="#" class="active">✈️ Vé máy bay</a>
+    <a href="#">🏷 Khuyến mãi</a>
+    <a href="#">📦 Combo</a>
+    <a href="#">🚆 Tàu hỏa</a>
+    <a href="#">🚗 Thuê xe</a>
+</div>
 
-  <div class="popular">
-    <div class="card">
-      <p>Hà Nội → TP.HCM</p>
-      <span>1.200.000đ</span>
+<div id="mainContent" class="content">
+    </div>
+<div class="content">
+    <div class="banner">
+        <h1>Tìm chuyến bay giá rẻ</h1>
     </div>
 
-    <div class="card">
-      <p>Hà Nội → Đà Nẵng</p>
-      <span>800.000đ</span>
-    </div>
+    <form class="search-box">
+        <div class="input-group">
+            <label>Điểm đi:</label>
+            <select id="diemDi">
+                <option value="" disabled selected>Chọn điểm đi</option>
+                </select>
+        </div>
 
-    <div class="card">
-      <p>TP.HCM → Phú Quốc</p>
-      <span>900.000đ</span>
-    </div>
-  </div>
+        <div class="input-group">
+            <label>Điểm đến:</label>
+            <select id="diemDen">
+                <option value="" disabled selected>Chọn điểm đến</option>
+                </select>
+        </div>
 
-  <!-- KẾT QUẢ -->
-  <div id="result"></div>
+        <div class="input-group">
+            <label>Ngày đi:</label>
+            <input type="date">
+        </div>
+        
+        <button type="submit" class="btn-search">Tìm kiếm</button>
+    </form>
+
+    <div class="popular">
+        <h3>🔥 Chuyến bay phổ biến</h3>
+        <div class="card-container">
+            <div class="card">Hà Nội → TP.HCM <br><strong>1.200.000đ</strong></div>
+            <div class="card">Hà Nội → Đà Nẵng <br><strong>800.000đ</strong></div>
+            <div class="card">TP.HCM → Phú Quốc <br><strong>900.000đ</strong></div>
+            <div class="card">Hà Nội → Nha Trang <br><strong>950.000đ</strong></div>
+            <div class="card">TP.HCM → Đà Lạt <br><strong>700.000đ</strong></div>
+            <div class="card">Hà Nội → Huế <br><strong>850.000đ</strong></div>
+            <div class="card">Cần Thơ → Hà Nội <br><strong>1.100.000đ</strong></div>
+            <div class="card">Hải Phòng → TP.HCM <br><strong>1.050.000đ</strong></div>
+        </div>
+    </div>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
