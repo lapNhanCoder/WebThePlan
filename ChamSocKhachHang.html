@@ -1,123 +1,173 @@
 <!DOCTYPE html>
-<html lang="vi-VN">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/cskh.css">
+    <title>Chăm sóc khách hàng - Chuyến bay</title>
+    <link rel="stylesheet" href="./css/khachhang.css">
+    <!-- <link rel="stylesheet" href="./css/Style.css"> -->
+     <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-    
-    <header>
-        <h1 class="titleWeb">Sn.com</h1>
-        <nav>
-            <a href="./index.html">Trang chủ</a>
-            <a href="./WebThePlan.html">Chuyến bay</a>
-            <a href="./ChamSocKhachHang.html">Chăm sóc khách hàng</a>
-            <a href="">Đăng nhập/Đăng ký</a>
-        </nav>
-
-        <div class="title">
-            <h1>Chăm Sóc Khách Hàng </h1>
-            <p>Hỗ trợ toàn cầu trong vong 30s</p>
-
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-nav">
+            <a class="logo-header" href="WebThePlan.html">TwoN Travel✈️ </a>
+            <nav class="nav-menu">
+                <a href="#">Khách sạn & Chỗ nghỉ</a>
+                <a href="#">Vé Máy bay</a>
+                <a href="#">Tàu</a>
+                <a href="#">Xe</a>
+            </nav>
         </div>
-        <div class="title-button">
-            <button>Tìm Kiếm Đặt Chỗ</button>
-            <button>Đăng Ký hoặc Đăng Nhập</button>
+        <div class="header-actions">
+            <button class="btnLogin-popup">Đăng nhập/đăng ký</button>
         </div>
     </header>
-
-    <!--Phần hỗ trợ trực tuyến -->
-    <main class="main-content">
-        <section class="support-section">
-            <div class="support-header">
-                <h2>
-                    <span class="dot-icon">●</span>
-                    Hỗ Trợ Trực Tuyến
-                </h2>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Chăm Sóc Khách Hàng Mọi Nơi <span class="orange-dot">.</span></h1>
+            <div class="hero-subtitle">
+                <span class="hero-icon">✓</span>
+                Hỗ trợ toàn cầu trong 30 giây
             </div>
-
-            <!-- Danh sách các loại hỗ trợ -->
-            <div class="support-categories">
-                <button class="category-btn active">Về máy bay</button>
-                <button class="category-btn">Khách sạn & Chỗ nghỉ</button>
-                <button class="category-btn">Tàu</button>
-                <button class="category-btn">Tour & Hoạt Động</button>
-                <button class="category-btn">Đưa Đón Sân Bay</button>
+            <div class="hero-buttons">
+                <button class="btn-outlined">Tìm Kiếm Đặt Chỗ</button>
+                <button class="btn-primary">Đăng Ký Hoặc Đăng Nhập</button>
             </div>
+        </div>
+    </section>
 
-            <!-- FAQ Questions -->
+    <section class="online-support">
+        <div class="support-card">
+            <h2>Hỗ Trợ Trực Tuyến</h2>
+            <div class="support-tabs">
+                <button class="tab-btn active">✈️ Vé máy bay</button>
+                <button class="tab-btn">🏠 Khách sạn & Chỗ nghỉ</button>
+                <button class="tab-btn">🚢 Tàu</button>
+                <button class="tab-btn">🎡 Tour & Hoạt Động</button>
+                <button class="tab-btn">🚗 Đưa Đón Sân Bay</button>
+            </div>
+            <div class="support-questions">
+                <div class="question-item">
+                    <p>Làm thế nào để đổi vé?</p>
+                    <span>›</span>
+                </div>
+                <div class="question-item">
+                    <p>Làm thế nào để hủy vé máy bay của tôi?</p>
+                    <span>›</span>
+                </div>
+                <div class="question-item">
+                    <p>Làm thế nào để yêu cầu thêm hạn mức hành lý ký gửi?</p>
+                    <span>›</span>
+                </div>
+                <div class="question-item">
+                    <p>Bạn có thắc mắc khác? Trò chuyện với chúng tôi ngay.</p>
+                    <span>›</span>
+                </div>
+            </div>
             <div class="faq-section">
-                <div class="faq-row">
-                    <div class="faq-item">
-                        <div class="faq-question">Làm thế nào để đổi vé?</div>
-                        <span class="arrow-icon">›</span>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">Làm thế nào để hủy về máy bay của tôi?</div>
-                        <span class="arrow-icon">›</span>
-                    </div>
-                </div>
-                <div class="faq-row">
-                    <div class="faq-item">
-                        <div class="faq-question">Làm thế nào để yêu cầu thêm hạn mục hành lý ký gửi?</div>
-                        <span class="arrow-icon">›</span>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">Bạn có thắc mắc khác? Trò chuyện với chúng tôi ngay.</div>
-                        <span class="arrow-icon">›</span>
+                <div class="faq-card">
+                    <h2>Câu hỏi thường gặp khác về Vé máy bay</h2>
+                    <div class="faq-links">
+                        <a href="#">Đặt Vé</a>
+                        <a href="#">Giá Vé</a>
+                        <a href="#">Thắc Mắc Khi Đặt Vé</a>
+                        <a href="#">Xuất Vé</a>
+                        <a href="#">Điều Chỉnh & Hủy Đặt Vé</a>
+                        <a href="#">...</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Common Questions Section -->
-            <div class="common-questions">
-                <h3>Câu hỏi thường gặp khác về Về máy bay</h3>
-                <div class="question-tags">
-                    <a href="#" class="tag">Đặt Vé</a>
-                    <a href="#" class="tag">Giá Vé</a>
-                    <a href="#" class="tag">Thắc Mắc Khi Đặt Vé</a>
-                    <a href="#" class="tag">Xuất Vé</a>
-                    <a href="#" class="tag">Điều Chỉnh & Hủy Đặt Vé</a>
-                    <a href="#" class="tag more-tag">...</a>
+    <!-- Font Đăng nhập/Đăng ký -->
+     <div class="wrapper">
+        <!-- Icon Close -->
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        
+        <div class="form-box login">
+            <h2>Đăng nhập</h2>
+            <form action="#">
+                <!--Input Email -->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
                 </div>
-            </div>
+                <!--Input Password -->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Mật khẩu</label>
+                </div>
+                <!-- Remember Me and Forgot Password -->
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">Nhớ tài khoản</label>
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+                <!-- Submit Login -->
+                <button type="submit" class="btn">Đăng nhập</button>
+                <!-- Login/Register Link -->
+                <div class="register-link">
+                    <p>Nếu bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
+                </div>
+            </form>
+        </div>
 
-            <!-- Support Methods -->
-            <div class="support-methods">
-                <div class="method-card">
-                    <div class="method-icon">💬</div>
-                    <div class="method-title">Trò chuyện</div>
+        <!-- Form Register -->
+         <div class="form-box register">
+            <h2>Đăng ký</h2>
+            <form action="#">
+                <!-- Input Username -->
+                 <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
                 </div>
-                <div class="method-card">
-                    <div class="method-icon">📞</div>
-                    <div class="method-title">Gọi Cho Chúng Tôi</div>
+                <!--Input Email -->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
                 </div>
-                <div class="method-card">
-                    <div class="method-icon">❓</div>
-                    <div class="method-title">Câu Hỏi Thường Gặp</div>
+                <!--Input Password -->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Mật khẩu</label>
                 </div>
-                <div class="method-card">
-                    <div class="method-icon">💁</div>
-                    <div class="method-title">Trợ Giúp Khác Cấp</div>
+                <!-- Remember Me and Forgot Password -->
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">Tôi đồng ý với các điều khoản & điều kiện</label>
                 </div>
-            </div>
+                <!-- Submit Register -->
+                <button type="submit" class="btn">Đăng ký</button>
+                <!-- Login/Register Link -->
+                <div class="login-link">
+                    <p>Đã có tài khoản? <a href="#">Đăng nhập</a></p>
+                </div>
+            </form>
+        </div>
 
-            <!-- Travel Guarantee -->
-            <div class="guarantee-section">
-                <div class="guarantee-content">
-                    <h3>
-                        <span class="checkmark">✓</span>
-                        An tâm du lịch với dịch vụ hỗ trợ đáng tin cậy của chúng tôi
-                    </h3>
-                    <p>Nhờ Bảo Đảm Dịch vụ của Trip.com với phạm vi áp dụng, đơn đặt chỗ của bạn được bảo về trước các sự cố có thể phát sinh ngoài ý muốn. 
-                        <a href="#" class="info-link">Tìm Hiểu Thêm</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Liên hệ với chúng tôi:</p>
+            <p>Chăm sóc khách hàng: <ion-icon name="call"></ion-icon> 1099100 có</p>
+            <p>Bảo đảm dịch vụ</p>
+            <p>Điều khoản & Điều kiện</p>
+        </div>
+        <div class="footer-content">
+            <p>Về TwoN Travel</p>
+            <a href="#">Điều khoản & Điều kiện</a>
+        </div>
+        <p>&copy; 2024 TwoN Travel. All rights reserved.</p>
+    </footer>
 
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
